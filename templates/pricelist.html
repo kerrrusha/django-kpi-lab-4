@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+	<div style="width:75%; margin-left: auto; margin-right: auto;">
+		<h1>Прайс-лист рейсів</h1>
+
+        <ul class="pricelist">
+		    {% for flight in flights %}
+				<li><strong>{{ flight.departure_place }} - {{ flight.arrival_place }}</strong> ({{ flight.departure_datetime }} - {{ flight.departure_datetime }}) -
+					<strong>{{ flight.price }}</strong></li>
+		    {% endfor %}
+		</ul>
+	</div>
+
+{% endblock %}
