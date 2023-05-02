@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{{ pageTitle }}</title>
+
+    <link rel="stylesheet" type="text/css" href="../static/styles/base.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/img/logo.png" alt="Logo">
+            <p>Аеропорт XYZ</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index">Головна</a></li>
+                <li><a href="offers">Товари та послуги</a></li>
+                <li><a href="pricelist">Прайс-лист</a></li>
+                <li><a href="contacts">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block main %}
+
+        {% endblock %}
+    </main>
+</body>
+</html>
